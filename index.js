@@ -21,7 +21,7 @@ function currentLine(katzDeliLine){
     for(var x = 0; x < katzDeliLine.length; x++){
       line += x+1 + ". " + katzDeliLine[x];
       
-      katzDeliLine !== katzDeliLine.length ? line += ", " : "";
+      katzDeliLine !== katzDeliLine.length-1 ? line += ", " : "";
     }
     return line;
   }
