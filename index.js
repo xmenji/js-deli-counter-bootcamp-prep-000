@@ -19,7 +19,9 @@ function currentLine(katzDeliLine){
   
   if(katzDeliLine.length !== 0){
     for(var x = 0; x < katzDeliLine.length; x++){
-      line += x+1 + ". " + katzDeliLine[x] + ", ";
+      line += x+1 + ". " + katzDeliLine[x];
+      
+      katzDeliLine !== katzDeliLine.length ? line += ", " : "";
     }
     return line;
   }
